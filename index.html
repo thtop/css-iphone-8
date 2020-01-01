@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>iPhone 8 Design With HTML and CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".home").click(function() {
+          $(".screen").toggleClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="center">
+      <div class="mobile">
+        <div class="screen active">
+          <div class="time">9:15</div>
+          <div class="date">Wednesday, 1 January</div>
+        </div>
+        <div class="home"></div>
+        <div class="inner"></div>
+        <ul class="volume">
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="silent">
+          <li></li>
+        </div>
+        <div class="sleep">
+          <li></li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
